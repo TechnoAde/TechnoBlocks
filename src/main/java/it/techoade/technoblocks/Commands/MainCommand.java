@@ -16,11 +16,11 @@ public class MainCommand implements CommandExecutor {
             Player p = (Player) sender;
 
             if(args.length == 0) {
-                p.sendMessage("&7Running &bFakeBlocks &7by &bFakeSwape#1804".replaceAll("&", "§"));
-                p.sendMessage("&b/fakeblocks list &7for list of command".replaceAll("&", "§"));
+                p.sendMessage("&7Running &bTechnoBlocks &7by &bTechnoAde#1350".replaceAll("&", "§"));
+                p.sendMessage("&b/technoblocks list &7for list of command".replaceAll("&", "§"));
             } else if(args.length == 1) {
                 if(args[0].equalsIgnoreCase("list")) {
-                    if(p.hasPermission("fakeblocks.listcommand") || p.hasPermission("fakeblocks.*")) {
+                    if(p.hasPermission("technoblocks.listcommand") || p.hasPermission("technoblocks.*")) {
                         p.sendMessage("&7List of commands".replaceAll("&", "§"));
                         p.sendMessage("&b/fakeblocks reload".replaceAll("&", "§"));
                         p.sendMessage("&b/blockselector".replaceAll("&", "§"));
@@ -28,7 +28,7 @@ public class MainCommand implements CommandExecutor {
                         p.sendMessage(TechnoBlocks.getInstance().getConfig().getString("nopermsmsg").replaceAll("&", "§"));
                     }
                 } else if(args[0].equalsIgnoreCase("reload")) {
-                    if(p.hasPermission("fakeblocks.reload") || p.hasPermission("fakeblocks.*")) {
+                    if(p.hasPermission("technoblocks.reload") || p.hasPermission("technoblocks.*")) {
                         TechnoBlocks.getInstance().reloadConfig();
                         TechnoBlocks.getInstance().saveConfig();
                         p.sendMessage(TechnoBlocks.getInstance().getConfig().getString("configurationreloaded").replaceAll("&", "§"));
