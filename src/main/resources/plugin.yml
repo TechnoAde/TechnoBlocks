@@ -1,0 +1,7 @@
+name: TechnoBlocks
+version: '${project.version}'
+main: it.techoade.technoblocks.TechnoBlocks
+prefix: [ TechnoBlocks ]
+softdepend: [ LuckPerms ]
+authors: [ TechnoAde ]
+description: This plugin can be used in minecraft hubs for placing blocks and remove them after specify time
