@@ -1,0 +1,29 @@
+name: TechnoBlocks
+version: '${project.version}'
+main: it.techoade.technoblocks.TechnoBlocks
+prefix: [ TechnoBlocks ]
+softdepend: [ LuckPerms ]
+authors: [ TechnoAde ]
+description: This plugin can be used in minecraft hubs for placing blocks and remove them after specify time
+commands:
+  technoblocks:
+    description: Main command
+    aliases: [tb, technob, blocks]
+  blockselector:
+    description: Command for open gui
+    aliases: [bs, blocks, selector]
+permissions:
+  technoblocks.listcommand:
+    description: Permission for use command "/fakeblock list"
+  technoblocks.reload:
+    description: Permission for use command "/fakeblock reload"
+  technoblocks.gui.use:
+    description: If you have this permission you can use gui for select different block
+  technoblocks.gui.use.item2:
+    description: If you have this permission you can use the second block
+  technoblocks.gui.use.item3:
+    description: If you have this permission you can use the third block
+  technoblocks.antidrop.bypass:
+    description: If you have this permission you can drop the blocks selected by gui and no
+  technoblocks.use:
+    description: If you have this permission after specified second set by you the block they will come replaced with air

@@ -1,0 +1,62 @@
+#    ______          __                   ____  __           __
+#   /_  __/__  _____/ /_  ____  ____     / __ )/ /___  _____/ /_______
+#    / / / _ \/ ___/ __ \/ __ \/ __ \   / __  / / __ \/ ___/ //_/ ___/
+#   / / /  __/ /__/ / / / / / / /_/ /  / /_/ / / /_/ / /__/ ,< (__  )
+#  /_/  \___/\___/_/ /_/_/ /_/\____/  /_____/_/\____/\___/_/|_/____/
+#
+# By TechnoAde#1350
+
+Version: "${project.version}"
+
+configurationreloaded: "&b&lTechnoBlocks &8» &7Config reloaded" #/technoblocks reload message
+noargsselect: "&b&lTechnoBlocks &8» &7No args selected" #No args used message
+nopermsmsg: "&b&lTechnoBlocks &8» &cYou don't have permission"
+nocreative: "&b&lTechnoBlocks &8» &cYou don't must be in creative"
+
+selector:
+  enable: true
+  type: CHEST
+  name: "&b&lSelector"
+  lore:
+    - "&7Amazing Selector!"
+    - "&7With multiline!"
+  amount: 1
+  slotonjoin: 7
+
+slotgive: 4 #General slot give
+timerforblock: 60 #This is the value MEASURED IN TICK (20 ticks = 1 second) of the time that the block after its placement will take to eliminate itself
+
+#     ____  _   _  ___
+#    / ___|| | | ||_ _|
+#   | |  _ | | | | | |
+#   | |_| || |_| | | |
+#    \____| \___/ |___|
+#
+
+gui:
+  noperms: "&b&lTechnoBlocks &8» &cYou don't have permission to use Block Selector"
+  guititle: "&8Block Selector" #Title of the GUI
+  guisize: 27 #Size of gui
+  firstitempos: 11
+  seconditempos: 13
+  thirditempos: 15
+  missingpermission: "&b&lYou can't select this block!" #technoblocks.gui.use.item3/2
+  item1: #First Item
+    type: WOOL #Type of item
+    name: "&bWool" #Name of item
+    lore:
+      - "&7Select wool" #Lore of item
+    quantitygive: 64 #Quantity of given blocks
+  item2: #Second item
+    type: WOOD #Type of item
+    name: "&bWood" #Name of item
+    lore:
+      - "&7Select Wood" #Lore of item
+    quantitygive: 64 #Quantity of given blocks
+    missingpermission: "&b&lYou can't select this block!" #technoblocks.gui.use.item2
+  item3: #Third item
+    type: OBSIDIAN #Type of item
+    name: "&bObsidian" #Name of item
+    lore:
+      - "&7Select obsidian" #Lore of item
+    quantitygive: 64 #Quantity of given blocks
